@@ -1,0 +1,109 @@
+/* 1. Định kiểu cho body: đổi font chữ và cỡ chữ */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* 2. Định kiểu cho header: đổi màu nền */
+header {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* 3. Định kiểu cho nav: đổi màu nền */
+nav {
+    background-color: #34495e;
+}
+
+/* 4. Định kiểu cho main: đổi màu nền và cỡ chữ */
+main {
+    background-color: #f4f4f4;
+    font-size: 18px;
+}
+
+/* 5. Định kiểu cho footer: đổi màu nền */
+footer {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* 6. Định kiểu cho li: đổi cách hiển thị (display) và chiều rộng (width) */
+li {
+    display: inline-block;
+    width: 120px;
+}
+
+/* 7. Định kiểu cho h1: căn lề, kiểu chữ, màu sắc */
+h1 {
+    text-align: center;
+    font-style: normal;
+    color: #ffffff;
+}
+
+/* 8. Định kiểu cho p: đổi khoảng cách dòng (line-height) */
+p {
+    line-height: 1.6;
+}
+/* Đổi màu chữ của các đường link trong thanh điều hướng sang màu trắng */
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+}
+/* Đổi màu chữ của tất cả các liên kết trong trang sang màu dễ nhìn */
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/* ==========================================================
+   YÊU CẦU 1: Vô hiệu hóa định kiểu cũ của thẻ li (bằng chú thích)
+   ========================================================== */
+/*
+li {
+    display: inline-block;
+    width: 140px;
+}
+*/
+
+/* ==========================================================
+   YÊU CẦU 2: Định kiểu cho thẻ nav (inline-block và rộng 80%)
+   ========================================================== */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* ==========================================================
+   YÊU CẦU 3: Bộ chọn con cháu cho ảnh trong nav (rộng 10%)
+   ========================================================== */
+nav img {
+    width: 10%;
+}
+
+/* ==========================================================
+   YÊU CẦU 4 & 6: Định kiểu lớp .grid (CSS Grid 2 cột 40%)
+   ========================================================== */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around; /* Căn đều khoảng cách giữa 2 cột */
+    align-items: center;
+    row-gap: 20px;                 /* Khoảng cách giữa các hàng */
+}
+
+/* ==========================================================
+   YÊU CẦU 5: Bộ chọn con cháu cho ảnh bên trong lớp .grid (rộng 100%)
+   Chỉ tác động đến ảnh trong grid, không làm ảnh hưởng ảnh trong flex
+   ========================================================== */
+.grid img {
+    width: 100%;
+}
+
+/* ==========================================================
+   YÊU CẦU 7: Định kiểu lớp .flex (CSS Flexbox)
+   ========================================================== */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Thử nghiệm center hoặc space-between nếu muốn đổi khoảng cách */
+    row-gap: 20px;
+}
